@@ -11,8 +11,8 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.io.Serializable;
 
-@Configuration
-@AutoConfigureAfter(RedisAutoConfiguration.class)
+@Configuration //配置类
+@AutoConfigureAfter(RedisAutoConfiguration.class) //在内置的配置类之后再配置
 public class RedisCacheAutoConfiguration {
 
     @Bean

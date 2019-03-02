@@ -45,5 +45,5 @@ public class RedisTest {
         final User user = (User) redisCacheTemplate.opsForValue().get(key);
         log.info("[对象缓存结果] - [{}]", user.toString());
     }
-    
+
 }
